@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <filtros-mixins-exercicios></filtros-mixins-exercicios>
+    <frutas></frutas>
+    <desafio1></desafio1>
+    <export-pdf></export-pdf>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FiltrosMixinsExercicios from "@/components/filtros-mixins-exercicios/filtros-mixins-exercicios";
+import Frutas from "@/components/filtros-mixins-exercicios/frutas";
+import Desafio1 from "@/components/filtros-mixins-exercicios/desafio1";
+import ExportPdf from "@/components/pdf/exportPdf";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ExportPdf,
+    Desafio1,
+    Frutas,
+    FiltrosMixinsExercicios
   }
+
 }
 </script>
 
