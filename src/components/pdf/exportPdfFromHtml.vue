@@ -11,7 +11,6 @@
 <script>
 
   import jsPDF from 'jspdf'
-
   export default {
     name: "exportPdfFromHtml",
     data(){
